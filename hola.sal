@@ -1,0 +1,126 @@
+numero de caracteres:
+entrar tabla:
+b = 0
+a = 10
+_ = 11
+_ 11
+a 10
+b 0
+numero de caracteres:
+entrar tabla:
+g = 00
+e = 01
+a = 100
+_ = 101
+f = 1100
+Ç = 11010
+Ñ = 11011
+i = 111
+_ 101
+a 100
+e 01
+f 1100
+g 00
+i 111
+Ç 11010
+Ñ 11011
+Tabla de frecuencias de idioma_mini:
+a 4
+b 7
+_ 5
+Tabla de frecuencias de idioma_mini:
+e 9
+f 3
+g 8
+_ 6
+Ç 1
+Ñ 2
+a 4
+i 6
+Treecode de idioma_mini:
+recorrido en preorden:
+ba_ 16
+b 7
+a_ 9
+a 4
+_ 5
+recorrido en inorden:
+b 7
+ba_ 16
+a 4
+a_ 9
+_ 5
+Treecode de idioma_mini:
+recorrido en preorden:
+gea_fÇÑi 39
+ge 17
+g 8
+e 9
+a_fÇÑi 22
+a_ 10
+a 4
+_ 6
+fÇÑi 12
+fÇÑ 6
+f 3
+ÇÑ 3
+Ç 1
+Ñ 2
+i 6
+recorrido en inorden:
+g 8
+ge 17
+e 9
+gea_fÇÑi 39
+a 4
+a_ 10
+_ 6
+a_fÇÑi 22
+f 3
+fÇÑ 6
+Ç 1
+ÇÑ 3
+Ñ 2
+fÇÑi 12
+i 6
+_ 11
+a 10
+b 0
+todos:
+b 0
+b:
+Ñ 11011
+Ñ:
+_ 101
+a 100
+e 01
+f 1100
+g 00
+i 111
+Ç 11010
+Ñ 11011
+todos:
+Tabla de frecuencias de idioma_mini:
+a 4
+b 7
+_ 5
+Treecode de idioma_mini:
+recorrido en preorden:
+ba_ 16
+b 7
+a_ 9
+a 4
+_ 5
+recorrido en inorden:
+b 7
+ba_ 16
+a 4
+a_ 9
+_ 5
+A No encontrado
+A:
+_ 11
+a 10
+b 0
+todos:
+Tabla de frecuencias de idioma_mini:
