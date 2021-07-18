@@ -1,0 +1,131 @@
+\hypertarget{classtabla}{}\section{Referencia de la Clase tabla}
+\label{classtabla}\index{tabla@{tabla}}
+
+
+Representa la tabla de frecuencias de un idioma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtabla_a47ec7f5106829c96469acb80c4992849}{tabla} ()
+\item 
+void \hyperlink{classtabla_ab297ddbd500d85a98d7c801697b73721}{leer} ()
+\begin{DoxyCompactList}\small\item\em Lee una tabla. \end{DoxyCompactList}\item 
+void \hyperlink{classtabla_a37f915651b80eaa0c6dc47c23ff92557}{modificar} ()
+\begin{DoxyCompactList}\small\item\em Escribe una tabla. \end{DoxyCompactList}\item 
+void \hyperlink{classtabla_ae0d9d7c8c80ef904a0c6cb0d25268b21}{escribir} ()
+\begin{DoxyCompactList}\small\item\em Consulta la tabla de frecuencias de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classtabla_a0c82642a3b06e17e3de850eedbe96d37}{ordenar} ()
+\begin{DoxyCompactList}\small\item\em ordena la tabla de frecuencias de un idioma. \end{DoxyCompactList}\item 
+int \hyperlink{classtabla_ade5cabea713c5247052a4ea28462945d}{size} ()
+\item 
+vector$<$ pair$<$ string, int $>$ $>$ \hyperlink{classtabla_a0debfe16db434472d3d1ec409f2ca6b5}{consultar\+\_\+tabla} ()
+\item 
+pair$<$ string, int $>$ \hyperlink{classtabla_aab5168294f0ecdfe4c3f22761a78d31f}{consultar\+\_\+iessimo} (int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa la tabla de frecuencias de un idioma. 
+
+Contiene el vector que funciona como tabla y operaciones que permiten leer o escribir la tabla. 
+
+Definición en la línea 25 del archivo tabla.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classtabla_a47ec7f5106829c96469acb80c4992849}\label{classtabla_a47ec7f5106829c96469acb80c4992849}} 
+\index{tabla@{tabla}!tabla@{tabla}}
+\index{tabla@{tabla}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{tabla()}{tabla()}}
+{\footnotesize\ttfamily tabla\+::tabla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classtabla_ab297ddbd500d85a98d7c801697b73721}\label{classtabla_ab297ddbd500d85a98d7c801697b73721}} 
+\index{tabla@{tabla}!leer@{leer}}
+\index{leer@{leer}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily void tabla\+::leer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lee una tabla. 
+
+\begin{DoxyPrecond}{Precondición}
+En el canal estándard de entrada se encuentra la tabla de frecuencias a leer. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han actualizado los datos de la tabla de frecuencias. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtabla_a37f915651b80eaa0c6dc47c23ff92557}\label{classtabla_a37f915651b80eaa0c6dc47c23ff92557}} 
+\index{tabla@{tabla}!modificar@{modificar}}
+\index{modificar@{modificar}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{modificar()}{modificar()}}
+{\footnotesize\ttfamily void tabla\+::modificar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escribe una tabla. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito por el canal estándard de salida una representación de la tabla. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtabla_ae0d9d7c8c80ef904a0c6cb0d25268b21}\label{classtabla_ae0d9d7c8c80ef904a0c6cb0d25268b21}} 
+\index{tabla@{tabla}!escribir@{escribir}}
+\index{escribir@{escribir}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void tabla\+::escribir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta la tabla de frecuencias de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito por el canal estandard de salida la tabla de frecuencias. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtabla_a0c82642a3b06e17e3de850eedbe96d37}\label{classtabla_a0c82642a3b06e17e3de850eedbe96d37}} 
+\index{tabla@{tabla}!ordenar@{ordenar}}
+\index{ordenar@{ordenar}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{ordenar()}{ordenar()}}
+{\footnotesize\ttfamily void tabla\+::ordenar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ordena la tabla de frecuencias de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classtabla_ade5cabea713c5247052a4ea28462945d}\label{classtabla_ade5cabea713c5247052a4ea28462945d}} 
+\index{tabla@{tabla}!size@{size}}
+\index{size@{size}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int tabla\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtabla_a0debfe16db434472d3d1ec409f2ca6b5}\label{classtabla_a0debfe16db434472d3d1ec409f2ca6b5}} 
+\index{tabla@{tabla}!consultar\+\_\+tabla@{consultar\+\_\+tabla}}
+\index{consultar\+\_\+tabla@{consultar\+\_\+tabla}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{consultar\+\_\+tabla()}{consultar\_tabla()}}
+{\footnotesize\ttfamily vector$<$pair$<$string,int$>$ $>$ tabla\+::consultar\+\_\+tabla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtabla_aab5168294f0ecdfe4c3f22761a78d31f}\label{classtabla_aab5168294f0ecdfe4c3f22761a78d31f}} 
+\index{tabla@{tabla}!consultar\+\_\+iessimo@{consultar\+\_\+iessimo}}
+\index{consultar\+\_\+iessimo@{consultar\+\_\+iessimo}!tabla@{tabla}}
+\subsubsection{\texorpdfstring{consultar\+\_\+iessimo()}{consultar\_iessimo()}}
+{\footnotesize\ttfamily pair$<$string,int$>$ tabla\+::consultar\+\_\+iessimo (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tabla_8hh}{tabla.\+hh}\end{DoxyCompactItemize}

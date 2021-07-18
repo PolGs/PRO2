@@ -1,0 +1,192 @@
+\hypertarget{classtreecode}{}\section{Referencia de la Clase treecode}
+\label{classtreecode}\index{treecode@{treecode}}
+
+
+Representa el treecode de un idioma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtreecode_a221f560d05368b0fd98593cd42a15e33}{treecode} ()
+\begin{DoxyCompactList}\small\item\em Crea un nuevo objeto de la clase treecode. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_af6bbdd5629014348d60cff563f843a50}{crear\+\_\+arbol} (\hyperlink{classtabla}{tabla} \&t)
+\begin{DoxyCompactList}\small\item\em Crea un nuevo objeto de la clase treecode a partir de una tabla. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_a66ab40a4fb5fcf86837b708261b8831a}{crear\+\_\+codigos} (const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&t, string \&s, map$<$ string, string $>$ \&ts)
+\begin{DoxyCompactList}\small\item\em Se crean los codigos de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_a70aadac29b9785276ba4f1a4bca7515e}{codifica} (const string \&texto)
+\begin{DoxyCompactList}\small\item\em Se codifica un mensaje en el idioma correspondiente. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_a446c078d3e137141bc56c6e44462322d}{decodifica} (const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&t, const string \&s, int \&i, string \&out)
+\begin{DoxyCompactList}\small\item\em Se decodifica un mensaje en el idioma correspondiente. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_aa009979ff4cb55efdf3a73c969e71291}{escribir\+\_\+decodifica} (const string \&texto)
+\begin{DoxyCompactList}\small\item\em Se escribe el menjase decodificado. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_a1b4221231711dc52751ddca683f146b1}{escribir} ()
+\begin{DoxyCompactList}\small\item\em Se escribe el treecode. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_ad56be1d26c0f852511b8ca0ce3f42cd3}{escribir\+\_\+tabla\+\_\+codigos} ()
+\begin{DoxyCompactList}\small\item\em Escribir tabla de codigos. \end{DoxyCompactList}\item 
+void \hyperlink{classtreecode_a83f608796a2a3fbbbe903bbb7e0448c3}{consultar\+\_\+caracter} (const string \&car)
+\begin{DoxyCompactList}\small\item\em Se escribe un caracter codificado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa el treecode de un idioma. 
+
+Contiene el árbol binario de carácter/frecuencia y las operaciones sobre este como codificar, decodificar o escribir. 
+
+Definición en la línea 26 del archivo treecode.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classtreecode_a221f560d05368b0fd98593cd42a15e33}\label{classtreecode_a221f560d05368b0fd98593cd42a15e33}} 
+\index{treecode@{treecode}!treecode@{treecode}}
+\index{treecode@{treecode}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{treecode()}{treecode()}}
+{\footnotesize\ttfamily treecode\+::treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un nuevo objeto de la clase treecode. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha creado un nuevo ojeto de la clase treecode. 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classtreecode_af6bbdd5629014348d60cff563f843a50}\label{classtreecode_af6bbdd5629014348d60cff563f843a50}} 
+\index{treecode@{treecode}!crear\+\_\+arbol@{crear\+\_\+arbol}}
+\index{crear\+\_\+arbol@{crear\+\_\+arbol}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{crear\+\_\+arbol()}{crear\_arbol()}}
+{\footnotesize\ttfamily void treecode\+::crear\+\_\+arbol (\begin{DoxyParamCaption}\item[{\hyperlink{classtabla}{tabla} \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Crea un nuevo objeto de la clase treecode a partir de una tabla. 
+
+\begin{DoxyPrecond}{Precondición}
+t es la tablla de frecuencias a partir de la cual se creara el arbol. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha creado un nuevo treecode correspondiente a la tabla de frecuencias. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_a66ab40a4fb5fcf86837b708261b8831a}\label{classtreecode_a66ab40a4fb5fcf86837b708261b8831a}} 
+\index{treecode@{treecode}!crear\+\_\+codigos@{crear\+\_\+codigos}}
+\index{crear\+\_\+codigos@{crear\+\_\+codigos}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{crear\+\_\+codigos()}{crear\_codigos()}}
+{\footnotesize\ttfamily void treecode\+::crear\+\_\+codigos (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$$>$ \&}]{t,  }\item[{string \&}]{s,  }\item[{map$<$ string, string $>$ \&}]{ts }\end{DoxyParamCaption})}
+
+
+
+Se crean los codigos de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+t es el treecode con el que codificar, s es una string auxiliar, ts es la tabla donde se gurdan los còdigos. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se han creado los codigos. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_a70aadac29b9785276ba4f1a4bca7515e}\label{classtreecode_a70aadac29b9785276ba4f1a4bca7515e}} 
+\index{treecode@{treecode}!codifica@{codifica}}
+\index{codifica@{codifica}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{codifica()}{codifica()}}
+{\footnotesize\ttfamily void treecode\+::codifica (\begin{DoxyParamCaption}\item[{const string \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+Se codifica un mensaje en el idioma correspondiente. 
+
+\begin{DoxyPrecond}{Precondición}
+En la string texto se encuentra el mensaje a codificar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el mensaje se puede codificar se imprime por el canal estándard de salida, en caso contrario se informa de la situación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_a446c078d3e137141bc56c6e44462322d}\label{classtreecode_a446c078d3e137141bc56c6e44462322d}} 
+\index{treecode@{treecode}!decodifica@{decodifica}}
+\index{decodifica@{decodifica}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{decodifica()}{decodifica()}}
+{\footnotesize\ttfamily void treecode\+::decodifica (\begin{DoxyParamCaption}\item[{const Bin\+Tree$<$ pair$<$ string, int $>$ $>$ \&}]{t,  }\item[{const string \&}]{s,  }\item[{int \&}]{i,  }\item[{string \&}]{out }\end{DoxyParamCaption})}
+
+
+
+Se decodifica un mensaje en el idioma correspondiente. 
+
+\begin{DoxyPrecond}{Precondición}
+En el arbol t se encuentra el treecode a utilizar, la string s contiene el mesaje a decodificar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si el mensaje se puede decodificar la string out contendra el mensaje decodificado. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_aa009979ff4cb55efdf3a73c969e71291}\label{classtreecode_aa009979ff4cb55efdf3a73c969e71291}} 
+\index{treecode@{treecode}!escribir\+\_\+decodifica@{escribir\+\_\+decodifica}}
+\index{escribir\+\_\+decodifica@{escribir\+\_\+decodifica}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{escribir\+\_\+decodifica()}{escribir\_decodifica()}}
+{\footnotesize\ttfamily void treecode\+::escribir\+\_\+decodifica (\begin{DoxyParamCaption}\item[{const string \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+Se escribe el menjase decodificado. 
+
+\begin{DoxyPrecond}{Precondición}
+texto contiene el texto a decodificar 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe por el canal estándard de salida el texto decodificado o se informa de que no es posible. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_a1b4221231711dc52751ddca683f146b1}\label{classtreecode_a1b4221231711dc52751ddca683f146b1}} 
+\index{treecode@{treecode}!escribir@{escribir}}
+\index{escribir@{escribir}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{escribir()}{escribir()}}
+{\footnotesize\ttfamily void treecode\+::escribir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Se escribe el treecode. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe por el canal estándard de salida una representación del arbol binaro en preorden e inorden. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_ad56be1d26c0f852511b8ca0ce3f42cd3}\label{classtreecode_ad56be1d26c0f852511b8ca0ce3f42cd3}} 
+\index{treecode@{treecode}!escribir\+\_\+tabla\+\_\+codigos@{escribir\+\_\+tabla\+\_\+codigos}}
+\index{escribir\+\_\+tabla\+\_\+codigos@{escribir\+\_\+tabla\+\_\+codigos}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{escribir\+\_\+tabla\+\_\+codigos()}{escribir\_tabla\_codigos()}}
+{\footnotesize\ttfamily void treecode\+::escribir\+\_\+tabla\+\_\+codigos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Escribir tabla de codigos. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe por el canal estándard de salida la tabla de codigos. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classtreecode_a83f608796a2a3fbbbe903bbb7e0448c3}\label{classtreecode_a83f608796a2a3fbbbe903bbb7e0448c3}} 
+\index{treecode@{treecode}!consultar\+\_\+caracter@{consultar\+\_\+caracter}}
+\index{consultar\+\_\+caracter@{consultar\+\_\+caracter}!treecode@{treecode}}
+\subsubsection{\texorpdfstring{consultar\+\_\+caracter()}{consultar\_caracter()}}
+{\footnotesize\ttfamily void treecode\+::consultar\+\_\+caracter (\begin{DoxyParamCaption}\item[{const string \&}]{car }\end{DoxyParamCaption})}
+
+
+
+Se escribe un caracter codificado. 
+
+\begin{DoxyPrecond}{Precondición}
+car es el caracter a codificar 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se escribe por el canal estándard de salida la codificacion del caracter car. 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{treecode_8hh}{treecode.\+hh}\end{DoxyCompactItemize}

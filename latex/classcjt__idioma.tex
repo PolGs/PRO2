@@ -1,0 +1,192 @@
+\hypertarget{classcjt__idioma}{}\section{Referencia de la Clase cjt\+\_\+idioma}
+\label{classcjt__idioma}\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+
+
+Representa un conjunto de idomas.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcjt__idioma_a79c18a172e61c3276f352a81c479dfb8}{cjt\+\_\+idioma} ()
+\begin{DoxyCompactList}\small\item\em Crea un conjunto de idiomas. \end{DoxyCompactList}\item 
+bool \hyperlink{classcjt__idioma_a253fbf0732efc679dea434ee7d261ffa}{existe\+\_\+idioma} (const string \&i)
+\begin{DoxyCompactList}\small\item\em Consulta si existe un idioma en el conjunto con el nombre del parámetro. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_aaf8acea2625eb1a72fbeaed23357c4ad}{anadir\+\_\+idioma} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Se añade al conjunto un nuevo idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_ac9cdce411a32c42a9fc7da848f7de4c0}{modificar\+\_\+idioma} (const string \&i)
+\begin{DoxyCompactList}\small\item\em Modifica un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_a5a92374dcbb5b9a0af7fdfccb59bc423}{codifica} (const string \&nombre, string \&texto)
+\begin{DoxyCompactList}\small\item\em Codifica un mensaje en un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_a25ee22b5af84a8ce22de2cee8128a08c}{decodifica} (const string \&nombre, const string \&texto)
+\begin{DoxyCompactList}\small\item\em Decodifica un mensaje en un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_ae2ab9ad48166bad14e113f748d1a888c}{consultar\+\_\+tabla\+\_\+de\+\_\+frequencias} (const string \&i)
+\begin{DoxyCompactList}\small\item\em Consulta la tabla de frecuencias de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_a2d13a4e69a358756359ee6e262de2fb0}{consultar\+\_\+treecode} (const string \&i)
+\begin{DoxyCompactList}\small\item\em Consulta el treecodede un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classcjt__idioma_a2e4b954ce7ee66596412c335430e9be8}{consultar\+\_\+codigos} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Consulta uno o todos los codigios de un idioma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un conjunto de idomas. 
+
+Contiene los idiomas y operaciones de gestión del conjunto. 
+
+Definición en la línea 22 del archivo cjt\+\_\+idioma.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classcjt__idioma_a79c18a172e61c3276f352a81c479dfb8}\label{classcjt__idioma_a79c18a172e61c3276f352a81c479dfb8}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{cjt\+\_\+idioma()}{cjt\_idioma()}}
+{\footnotesize\ttfamily cjt\+\_\+idioma\+::cjt\+\_\+idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un conjunto de idiomas. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha creado un conjunto de idiomas vacio. 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcjt__idioma_a253fbf0732efc679dea434ee7d261ffa}\label{classcjt__idioma_a253fbf0732efc679dea434ee7d261ffa}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!existe\+\_\+idioma@{existe\+\_\+idioma}}
+\index{existe\+\_\+idioma@{existe\+\_\+idioma}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{existe\+\_\+idioma()}{existe\_idioma()}}
+{\footnotesize\ttfamily bool cjt\+\_\+idioma\+::existe\+\_\+idioma (\begin{DoxyParamCaption}\item[{const string \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Consulta si existe un idioma en el conjunto con el nombre del parámetro. 
+
+\begin{DoxyPrecond}{Precondición}
+i contiene el nombre del idioma a consultar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se retorna cierto si el idoma existe, falso en caso contario. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_aaf8acea2625eb1a72fbeaed23357c4ad}\label{classcjt__idioma_aaf8acea2625eb1a72fbeaed23357c4ad}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!anadir\+\_\+idioma@{anadir\+\_\+idioma}}
+\index{anadir\+\_\+idioma@{anadir\+\_\+idioma}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{anadir\+\_\+idioma()}{anadir\_idioma()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::anadir\+\_\+idioma (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Se añade al conjunto un nuevo idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+s contiene el nombre del idioma a añadir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha añadido el idioma de nombre s al conjunto c. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_ac9cdce411a32c42a9fc7da848f7de4c0}\label{classcjt__idioma_ac9cdce411a32c42a9fc7da848f7de4c0}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!modificar\+\_\+idioma@{modificar\+\_\+idioma}}
+\index{modificar\+\_\+idioma@{modificar\+\_\+idioma}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{modificar\+\_\+idioma()}{modificar\_idioma()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::modificar\+\_\+idioma (\begin{DoxyParamCaption}\item[{const string \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Modifica un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+i contiene el nombre del idioma a modificar, i existe en c. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha modificado el idioma. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_a5a92374dcbb5b9a0af7fdfccb59bc423}\label{classcjt__idioma_a5a92374dcbb5b9a0af7fdfccb59bc423}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!codifica@{codifica}}
+\index{codifica@{codifica}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{codifica()}{codifica()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::codifica (\begin{DoxyParamCaption}\item[{const string \&}]{nombre,  }\item[{string \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+Codifica un mensaje en un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+nombre contiene el idioma en el que codificar y texto el mensaje a codificar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si se puede codificar, se ha escrito por el canal estandard de salida el mensaje codificado. En caso contrario el usuario es informado de la situación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_a25ee22b5af84a8ce22de2cee8128a08c}\label{classcjt__idioma_a25ee22b5af84a8ce22de2cee8128a08c}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!decodifica@{decodifica}}
+\index{decodifica@{decodifica}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{decodifica()}{decodifica()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::decodifica (\begin{DoxyParamCaption}\item[{const string \&}]{nombre,  }\item[{const string \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+Decodifica un mensaje en un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+nombre contiene el idioma en el que decodificar y texto el mensaje a decodificar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si se puede decodificar, se ha escrito por el canal estandard de salida el mensaje decodificado. En caso contrario el usuario es informado de la situación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_ae2ab9ad48166bad14e113f748d1a888c}\label{classcjt__idioma_ae2ab9ad48166bad14e113f748d1a888c}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!consultar\+\_\+tabla\+\_\+de\+\_\+frequencias@{consultar\+\_\+tabla\+\_\+de\+\_\+frequencias}}
+\index{consultar\+\_\+tabla\+\_\+de\+\_\+frequencias@{consultar\+\_\+tabla\+\_\+de\+\_\+frequencias}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+tabla\+\_\+de\+\_\+frequencias()}{consultar\_tabla\_de\_frequencias()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::consultar\+\_\+tabla\+\_\+de\+\_\+frequencias (\begin{DoxyParamCaption}\item[{const string \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Consulta la tabla de frecuencias de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+i contiene el nombre del idioma del que queremos ver la tabla de frecuencias, i existe en c. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha escrito por el canal estandard de salida la tabla de frecuencias. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_a2d13a4e69a358756359ee6e262de2fb0}\label{classcjt__idioma_a2d13a4e69a358756359ee6e262de2fb0}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!consultar\+\_\+treecode@{consultar\+\_\+treecode}}
+\index{consultar\+\_\+treecode@{consultar\+\_\+treecode}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+treecode()}{consultar\_treecode()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::consultar\+\_\+treecode (\begin{DoxyParamCaption}\item[{const string \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Consulta el treecodede un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+i contiene el nombre del idioma del que queremos ver el treecode, i existe en c. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha escrito por el canal estandard de salida el treecode en prorden e inorden. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classcjt__idioma_a2e4b954ce7ee66596412c335430e9be8}\label{classcjt__idioma_a2e4b954ce7ee66596412c335430e9be8}} 
+\index{cjt\+\_\+idioma@{cjt\+\_\+idioma}!consultar\+\_\+codigos@{consultar\+\_\+codigos}}
+\index{consultar\+\_\+codigos@{consultar\+\_\+codigos}!cjt\+\_\+idioma@{cjt\+\_\+idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+codigos()}{consultar\_codigos()}}
+{\footnotesize\ttfamily void cjt\+\_\+idioma\+::consultar\+\_\+codigos (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Consulta uno o todos los codigios de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+s contiene el nombre del idioma del que queremos ver los codigos. En el canal estandard de entrada espera el caracter a consultaro la string \char`\"{}todos\char`\"{}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+se ha escrito por el canal estandard de salida el codigo o codigos correspondientes. 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cjt__idioma_8hh}{cjt\+\_\+idioma.\+hh}\end{DoxyCompactItemize}

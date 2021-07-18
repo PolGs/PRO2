@@ -1,0 +1,192 @@
+\hypertarget{classidioma}{}\section{Referencia de la Clase idioma}
+\label{classidioma}\index{idioma@{idioma}}
+
+
+Representa un idoma.  
+
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classidioma_aef8714e17b1c5141104f5fb7bd989283}{idioma} ()
+\begin{DoxyCompactList}\small\item\em Crea un nuevo idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_a40b865628fe20757e63c10cecd516c1f}{crear\+\_\+idioma} ()
+\begin{DoxyCompactList}\small\item\em Crea un nuevo idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_af7d4b2d6a05e6b87783d9394fb1cc08e}{modificar\+\_\+idioma} ()
+\begin{DoxyCompactList}\small\item\em Modifica un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_ab1f4f36cf5bef660d93208ca12a08d15}{codifica} (string \&text)
+\begin{DoxyCompactList}\small\item\em Codifica un texto. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_a901e5b496773705624ae82bdcf15fac8}{decodifica} (const string \&texto)
+\begin{DoxyCompactList}\small\item\em Decodifica un mensaje en un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_a3b803dbdff20ebe884dd8e66550a856f}{consultar\+\_\+tabla} ()
+\begin{DoxyCompactList}\small\item\em Consultar la tabla de frecuencias de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_aba4621fa2985a6ceba574eeeca069b8d}{consultar\+\_\+treecode} ()
+\begin{DoxyCompactList}\small\item\em Consultar el treecode de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_a4e58f4dbc3845d4d8cea0c6b923a2e4e}{consultar\+\_\+codigos} ()
+\begin{DoxyCompactList}\small\item\em Consultar los codigos de un idioma. \end{DoxyCompactList}\item 
+void \hyperlink{classidioma_ad7342a94567fbd464ef2ee40ad1bb213}{consultar\+\_\+caracter} (const string \&car)
+\begin{DoxyCompactList}\small\item\em Consulta el codigo de un caracter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Representa un idoma. 
+
+Contiene el nombre, la tabla de frecuencias y las operaciones sobre este como modificadoras o consultoras. 
+
+Definición en la línea 19 del archivo idioma.\+hh.
+
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classidioma_aef8714e17b1c5141104f5fb7bd989283}\label{classidioma_aef8714e17b1c5141104f5fb7bd989283}} 
+\index{idioma@{idioma}!idioma@{idioma}}
+\index{idioma@{idioma}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{idioma()}{idioma()}}
+{\footnotesize\ttfamily idioma\+::idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un nuevo idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un objeto de la clase idoma vacio. 
+\end{DoxyPostcond}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classidioma_a40b865628fe20757e63c10cecd516c1f}\label{classidioma_a40b865628fe20757e63c10cecd516c1f}} 
+\index{idioma@{idioma}!crear\+\_\+idioma@{crear\+\_\+idioma}}
+\index{crear\+\_\+idioma@{crear\+\_\+idioma}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{crear\+\_\+idioma()}{crear\_idioma()}}
+{\footnotesize\ttfamily void idioma\+::crear\+\_\+idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Crea un nuevo idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha creado un objeto de la clase idoma. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_af7d4b2d6a05e6b87783d9394fb1cc08e}\label{classidioma_af7d4b2d6a05e6b87783d9394fb1cc08e}} 
+\index{idioma@{idioma}!modificar\+\_\+idioma@{modificar\+\_\+idioma}}
+\index{modificar\+\_\+idioma@{modificar\+\_\+idioma}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{modificar\+\_\+idioma()}{modificar\_idioma()}}
+{\footnotesize\ttfamily void idioma\+::modificar\+\_\+idioma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modifica un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha modificado el idioma. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_ab1f4f36cf5bef660d93208ca12a08d15}\label{classidioma_ab1f4f36cf5bef660d93208ca12a08d15}} 
+\index{idioma@{idioma}!codifica@{codifica}}
+\index{codifica@{codifica}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{codifica()}{codifica()}}
+{\footnotesize\ttfamily void idioma\+::codifica (\begin{DoxyParamCaption}\item[{string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Codifica un texto. 
+
+\begin{DoxyPrecond}{Precondición}
+en la string texto se encuentra el mensaje a codificar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito por el canal estandard de salida el mensaje codificado. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_a901e5b496773705624ae82bdcf15fac8}\label{classidioma_a901e5b496773705624ae82bdcf15fac8}} 
+\index{idioma@{idioma}!decodifica@{decodifica}}
+\index{decodifica@{decodifica}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{decodifica()}{decodifica()}}
+{\footnotesize\ttfamily void idioma\+::decodifica (\begin{DoxyParamCaption}\item[{const string \&}]{texto }\end{DoxyParamCaption})}
+
+
+
+Decodifica un mensaje en un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+texto contiene el mensaje a decodificar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Si se puede decodificar, se ha escrito por el canal estandard de salida el mensaje decodificado. En caso contrario el usuario es informado de la situación. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_a3b803dbdff20ebe884dd8e66550a856f}\label{classidioma_a3b803dbdff20ebe884dd8e66550a856f}} 
+\index{idioma@{idioma}!consultar\+\_\+tabla@{consultar\+\_\+tabla}}
+\index{consultar\+\_\+tabla@{consultar\+\_\+tabla}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+tabla()}{consultar\_tabla()}}
+{\footnotesize\ttfamily void idioma\+::consultar\+\_\+tabla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultar la tabla de frecuencias de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito la tabla de frecuencias del parametro implícito. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_aba4621fa2985a6ceba574eeeca069b8d}\label{classidioma_aba4621fa2985a6ceba574eeeca069b8d}} 
+\index{idioma@{idioma}!consultar\+\_\+treecode@{consultar\+\_\+treecode}}
+\index{consultar\+\_\+treecode@{consultar\+\_\+treecode}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+treecode()}{consultar\_treecode()}}
+{\footnotesize\ttfamily void idioma\+::consultar\+\_\+treecode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultar el treecode de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito el treecode del parametro implícito. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_a4e58f4dbc3845d4d8cea0c6b923a2e4e}\label{classidioma_a4e58f4dbc3845d4d8cea0c6b923a2e4e}} 
+\index{idioma@{idioma}!consultar\+\_\+codigos@{consultar\+\_\+codigos}}
+\index{consultar\+\_\+codigos@{consultar\+\_\+codigos}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+codigos()}{consultar\_codigos()}}
+{\footnotesize\ttfamily void idioma\+::consultar\+\_\+codigos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consultar los codigos de un idioma. 
+
+\begin{DoxyPrecond}{Precondición}
+Cierto. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito la tabla de codigos del parametro implícito. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classidioma_ad7342a94567fbd464ef2ee40ad1bb213}\label{classidioma_ad7342a94567fbd464ef2ee40ad1bb213}} 
+\index{idioma@{idioma}!consultar\+\_\+caracter@{consultar\+\_\+caracter}}
+\index{consultar\+\_\+caracter@{consultar\+\_\+caracter}!idioma@{idioma}}
+\subsubsection{\texorpdfstring{consultar\+\_\+caracter()}{consultar\_caracter()}}
+{\footnotesize\ttfamily void idioma\+::consultar\+\_\+caracter (\begin{DoxyParamCaption}\item[{const string \&}]{car }\end{DoxyParamCaption})}
+
+
+
+Consulta el codigo de un caracter. 
+
+\begin{DoxyPrecond}{Precondición}
+car contiene el caracter a consultar. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se ha escrito el codigo de car. 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{idioma_8hh}{idioma.\+hh}\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{program_8cc}{}\section{Referencia del Archivo program.\+cc}
+\label{program_8cc}\index{program.\+cc@{program.\+cc}}
+
+
+Programa principal.  
+
+
+Dependencia gráfica adjunta para program.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{program_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Programa principal. 
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{program_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{program.\+cc@{program.\+cc}!main@{main}}
+\index{main@{main}!program.\+cc@{program.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definición en la línea 23 del archivo program.\+cc.
+
+
+\begin{DoxyCode}
+23           \{
+24     \textcolor{keywordtype}{int} n;
+25     cin >>n;
+26     \hyperlink{classcjt__idioma}{cjt\_idioma} c;
+27     \textcolor{keywordtype}{string} i;
+28     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j<n; j++)\{
+29         cin >> i;
+30         c.\hyperlink{classcjt__idioma_aaf8acea2625eb1a72fbeaed23357c4ad}{anadir\_idioma}(i);
+31     \}
+32     \textcolor{keywordtype}{string} s;
+33     \textcolor{keywordflow}{while}(cin>>s and s != \textcolor{stringliteral}{"fin"})\{
+34         
+35         \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"anadir/modificar"})\{
+36             cin >> i;
+37             \textcolor{keywordflow}{if}(c.\hyperlink{classcjt__idioma_a253fbf0732efc679dea434ee7d261ffa}{existe\_idioma}(i)) c.\hyperlink{classcjt__idioma_ac9cdce411a32c42a9fc7da848f7de4c0}{modificar\_idioma}(i);
+38             \textcolor{keywordflow}{else} \{
+39                 c.\hyperlink{classcjt__idioma_aaf8acea2625eb1a72fbeaed23357c4ad}{anadir\_idioma}(i);
+40                 cout << \textcolor{stringliteral}{"Anadido "} << i << endl<<endl;
+41             \}
+42         \}
+43         
+44         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"codifica"})\{
+45             cin >> i;
+46             \textcolor{keywordtype}{string} texto;
+47             cin >> texto;
+48             cout<< \textcolor{stringliteral}{"Codifica en "} << i << \textcolor{stringliteral}{" el texto:"} << endl;
+49             cout << texto << endl;
+50             c.\hyperlink{classcjt__idioma_a5a92374dcbb5b9a0af7fdfccb59bc423}{codifica}(i, texto);
+51         \}
+52         
+53         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"decodifica"})\{
+54             \textcolor{keywordtype}{string} texto;
+55             cin >> i >> texto;
+56             cout<< \textcolor{stringliteral}{"Decodifica en "} << i << \textcolor{stringliteral}{" el texto:"} << endl;
+57             cout << texto << endl;
+58             c.\hyperlink{classcjt__idioma_a25ee22b5af84a8ce22de2cee8128a08c}{decodifica}(i, texto);
+59         \}
+60         
+61         
+62         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"tabla\_frec"})\{
+63             cin >> i;
+64             \textcolor{keywordflow}{if}(c.\hyperlink{classcjt__idioma_a253fbf0732efc679dea434ee7d261ffa}{existe\_idioma}(i))\{
+65                 cout << \textcolor{stringliteral}{"Tabla de frecuencias de "} << i << \textcolor{stringliteral}{":"} << endl;
+66                 c.\hyperlink{classcjt__idioma_ae2ab9ad48166bad14e113f748d1a888c}{consultar\_tabla\_de\_frequencias}(i);
+67             \}
+68             \textcolor{keywordflow}{else}\{
+69                 cout << \textcolor{stringliteral}{"Tabla de frecuencias de "} << i << \textcolor{stringliteral}{":"} << endl;
+70                 cout << \textcolor{stringliteral}{"El idioma no existe"}<< endl << endl;
+71             \}
+72         \}
+73         
+74         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"treecode"})\{
+75             cin >> i;
+76             \textcolor{keywordflow}{if}(c.\hyperlink{classcjt__idioma_a253fbf0732efc679dea434ee7d261ffa}{existe\_idioma}(i))\{
+77                 cout << \textcolor{stringliteral}{"Treecode de "} << i <<\textcolor{stringliteral}{":"}<< endl;
+78                 c.\hyperlink{classcjt__idioma_a2d13a4e69a358756359ee6e262de2fb0}{consultar\_treecode}(i);
+79             \}
+80             \textcolor{keywordflow}{else}\{
+81                 cout << \textcolor{stringliteral}{"Treecode de "} << i <<\textcolor{stringliteral}{":"}<< endl;
+82                 cout << \textcolor{stringliteral}{"El idioma no existe"}<< endl << endl;
+83             \}
+84         \}
+85     
+86         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(s == \textcolor{stringliteral}{"codigos"})\{
+87                 cin >>i;
+88                 c.\hyperlink{classcjt__idioma_a2e4b954ce7ee66596412c335430e9be8}{consultar\_codigos}(i);
+89                 cout << endl;
+90         \}      
+91     \}
+92 \}
+\end{DoxyCode}
